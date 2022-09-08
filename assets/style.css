@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --blue: #0065FC;
+    --clearblue:#DEEBFF;
+    --grey:#F2F2F2;
+    --black:#1E1E1E;
+    --white:#FEFEFE;
+    --dark-grey:#D1D0D0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Raleway', sans-serif;  
+}
+header{
+    max-width:1400px;
+}
+main{
+    max-width:1400px;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    margin:40px 0 0 60px;
+    align-items:center;
+}
+nav ul{
+    display:flex;
+}
+nav li{
+    margin-left:30px;
+    list-style-type: none;
+    position:relative;
+    padding:0 20px;
+}
+nav li a{
+    color:var(--black);
+    text-decoration:none;
+    transition: all 0.5s ease-in-out;
+}
+nav li a:hover{
+    color:var(--blue);
+   
+}
+nav li a:hover::after{
+    content:"";
+    background-color:var(--blue);
+    width:100%;
+    height:2px;
+    position:absolute;
+    bottom:50px;
+    left:0;
+    pointer-events: none;
+}
+.search{
+    margin:0 50px;
+    padding-top:30px;
+}
+.title_search h1{
+    font-family:'Raleway', sans-serif;
+    font-size:22px;
+}
+.text_search{
+    padding-top:10px;
+}
+.text_search h2{
+  font-weight:300;
+  font-size:16px;
+}
+.champs_search{
+    padding-top:20px;
+}
+.champ{
+    display:flex;
+   height:50px;
+}
+.icon_champs_search{
+    width:60px;
+    background-color:var(--grey);
+    border-radius:15px 0px 0px 15px;
+    border:none;
+    position:relative;
+}
+.champ_city{
+    border: 1px solid var(--grey);
+    border-radius:0px;
+    height:100%;
+    width:200px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    font-family:'raleway', sans-serif;
+    background-color:var(--white);
+}
+.city_champs_search{
+    height:100%;
+}
+.btn_champs_search{
+    height:100%;
+}
+.bouton_search{
+    height:100%;
+    width:150px;
+    background-color:var(--blue);
+    border:none;
+    color:var(--white);
+    font-family:'Raleway', sans-serif;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing: 1px;
+    border-radius:0px 15px 15px 0px;
+    cursor:pointer;
+}
+.icon_champs_search i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.filtres{
+    margin: 0 60px;
+    padding-top:40px;
+    width:70%;
+}
+.filtres .title{
+    margin-right:30px;
+}
+.container_filter{
+    display: flex;
+    align-items:center;
+    font-weight:600;  
+}
+.filter_items{
+    display:flex;
+}
+.items_filter{
+    display: flex;
+    border:2px solid var(--dark-grey);
+    border-radius:50px;
+    margin-right:30px;
+    position:relative;
+    height:50px;
+    cursor:pointer;
+}
+.icons_filter{
+    border-radius:50px;
+    background-color:var(--clearblue);
+    width:48px;
+    position:relative; 
+    left:-8px;  
+}
+.items_filter i{
+    color:var(--blue);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.texte_filter p{
+    padding: 0 6px;
+}
+.texte_filter{
+    padding:10px;
+    font-size:18px;
+} 
+.icons_filter:hover{
+    background-color:var(--blue);
+}
+
+.infos{
+    display: flex;
+    padding-top:40px;
+    align-items:center;
+}
+.icon_infos{
+    border:1px solid var(--grey);
+    padding:5px 12px;
+    border-radius:50px;
+    margin-right:20px;
+}
+.icon_infos i{
+    color:var(--blue);
+}
+#Hébergement{
+    padding-top:60px;
+    margin:0 0 0 60px;
+}
+.container_cards{
+    display: flex;
+    gap:40px;
+    justify-content: space-between;
+}
+.card_card_left{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    padding-top:30px;
+    justify-content: space-around;
+}
+.card_left{
+    background-color:var(--grey);
+    border-radius:20px;
+    padding:30px;
+}
+.card_card_left .card .text_card{
+    padding:5px 10px;
+}
+.card_card_left .card{
+    width:230px;
+    height:200px;
+    box-shadow: 0px 0px 22px 0px rgba(181, 181, 181, 1);
+    border-radius:20px;
+    padding:3px;
+}
+.card_card_left .card_photos{
+    width:100%;
+    border-radius:20px 20px 0 0;
+}
+.card_card_left .img_card{
+    height:65%; 
+}
+.card_left .card_photos{
+    height:100%;
+    object-fit: cover;
+}
+.stars_card{
+    color:var(--blue);
+}
+.colored{
+    color:grey;
+}
+.card_left .title h3{
+    font-size:22px;
+}
+.card_card_left .title_card{
+    font-weight:600;
+}
+.card_card_left .para_card{
+    font-size:15px;
+}
+.card_card_left .stars_card{
+    font-size:12px;
+}
+.card_left .show_more{
+    padding-top:50px;
+    font-weight:600;
+}
+.card_right{
+    background-color:var(--grey);
+    border-radius:20px;
+    padding:30px;
+}
+.card_right .title{
+    display: flex;
+    justify-content:space-between;
+}
+.card_right .title .h1{
+    font-weight:600;
+    font-size:22px;
+}
+.popular_cards{
+    padding-top:30px;
+}
+.card_right .card{
+    width:350px;
+    display:flex;
+    height:150px;
+    margin:0 0 30px 0;
+    background-color:var(--white);
+    box-shadow: 0px 0px 22px 0px rgba(181, 181, 181, 1);
+    border-radius:20px;
+
+}
+.card_right .card .img_card{
+    width:calc(100%/2);
+    padding:5px;
+    height:100%;
+    width:50%;
+}
+.card_right .card .card_photos{
+    height:100%;
+    object-fit:cover;
+    width:100%;
+    border-radius:20px 0px 0px 20px;
+}
+.card_right .card .text_card{
+    padding:20px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.card_right .card .title_card{
+    font-weight:600;
+    font-size:15px;
+}
+.card_right .card .stars_card{
+    font-size:12px;
+}
+.card_right .card .para_card{
+    font-size:14px;
+}
+
+
+
+
+#Activités{
+    padding-top:100px;
+    margin:0 0 0 60px;
+}
+#Activités .cards_activity{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding-top:30px;   
+}
+#Activités .cards_activity .cards{
+    width:25%;
+    border-radius:20px;
+    height:500px; 
+    display:flex;
+    flex-direction: column;
+    gap:45px;   
+}
+.card_row, .card_column{
+    width:100%;
+    border-radius:20px;
+    box-shadow: 0px 0px 6px -2px rgba(66, 68, 90, 1);
+    height:100%;  
+    display:flex;
+    flex-direction: column;   
+}
+.card_column{
+    height:45%;
+}
+
+#Activités .cards  .card_row .img{
+    height:90%;
+}
+#Activités .cards  .card_column .img{
+    height:80%;
+}
+
+
+#Activités .cards_activity .img .photo_activity{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:20px 20px 0 0;
+}
+#Activités .card_column .title{
+    padding:15px;
+    text-align:left
+}
+#Activités .card_row .title{
+    padding:10px 10px;
+}
+footer{
+    padding-top:100px;
+    max-width:1400px;
+}
+.footer{
+    display: flex;
+    padding:50px;
+    justify-content: space-between;
+    background-color:var(--grey);
+    padding-right:350px;
+}
+.items_footer{
+    padding-top:10px;
+}
+.items_footer .items {
+    line-height: 30px;
+}
+.items_footer .items a{
+    text-decoration:none;
+    color:var(--black);  
+}
+
+.items_footer .items a:hover{
+    text-decoration:underline;
+}
