@@ -103,9 +103,8 @@ nav li a:hover::after{
 .btn_champs_search{
     height:100%;
 }
-.bouton_search{
+.btn_champs_search{
     height:100%;
-    width:150px;
     background-color:var(--blue);
     border:none;
     color:var(--white);
@@ -114,7 +113,14 @@ nav li a:hover::after{
     font-weight:600;
     letter-spacing: 1px;
     border-radius:0px 15px 15px 0px;
+    padding:10px;
     cursor:pointer;
+    display:flex;
+    align-items:center;
+}
+
+.btn_responsive{
+    display:none;
 }
 .icon_champs_search i{
     position:absolute;
@@ -189,7 +195,7 @@ nav li a:hover::after{
 }
 #Hébergement{
     padding-top:40px;
-    margin:0 20px 0 60px;
+    margin:0 30px 0 30px;
 }
 .container_cards{
     display: flex;
@@ -212,7 +218,7 @@ nav li a:hover::after{
     padding:5px 10px;
 }
 .card_card_left .card{
-    width:230px;
+    width:30%;
     height:200px;
     box-shadow: 0px 0px 22px 0px rgba(181, 181, 181, 1);
     border-radius:20px;
@@ -319,7 +325,7 @@ nav li a:hover::after{
 
 #Activités{
     padding-top:100px;
-    margin:0 30px 0 60px;
+    margin:0 30px 0 30px;
 }
 #Activités .cards_activity{
     display:flex;
@@ -411,9 +417,6 @@ footer{
     .card_left{
        padding:30px 30px 0 30px;
     }
-    .card_card_left .card{
-        width:350px;
-    }
     .show_more{
         padding-bottom:20px;
     }
@@ -444,6 +447,11 @@ footer{
         height:80%;
     }
 }
+@media screen and (max-width:870px){
+    .card_card_left .card {
+        width:100%;
+    }
+}
 
 @media screen and (max-width:768px){
     nav{
@@ -458,6 +466,10 @@ footer{
     }
     .card_left{
         background-color:transparent;
+        padding:30px 50px;
+    }
+    .card_right{
+        padding:35px 50px;
     }
     .container_filter{
         display:block;
@@ -476,37 +488,51 @@ footer{
     }
     .items_nav li{
         position:relative;
+        padding-bottom:10px;
     }
-
-    .items_nav li::after{
+    .items_nav a::after{
         content:"";
-        background-color:red;
-        position:absolute;
+        background-color:var(--grey);
         width:100%;
-        height:1px;
+        height:3px;
+        position:absolute;
+        bottom:0;
+        left:0;
     }
-    .bouton_search{
-        
+    nav li a:hover::after{
+        content:"";
+        background-color:var(--blue);
+        width:100%;
+        height:3px;
+        position:absolute;
+        bottom:0;
+        left:0;
+        pointer-events: none;
     }
+    .items_nav{
+        padding-top:30px;
+    }
+    .items_nav a::after:hover{
+        background-color:var(--blue);
+    }
+   
     .champ{
         position:relative;
     }
-    /*.champ::after{
-        content:"";
-        background-color:var(--blue);
-        height:100%;
-        width:50px;
-        border-radius:10px 10px 10px 10px;
-        position:absolute;
-        left:250px;
-    }*/
+   
     #Hébergement{
         margin:0;
     }
     #Activités{
         margin:0 30px 0 30px;
     }
-
+    .btn_responsive{
+        display:block;
+        padding:10px;
+    }
+    .btn_search{
+        display:none;
+    }
 }
 
 
