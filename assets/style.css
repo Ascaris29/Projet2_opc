@@ -295,7 +295,6 @@ nav li a:hover::after{
     width:calc(100%/2);
     padding:5px;
     height:100%;
-    width:70%;
 }
 .card_right .card .card_photos{
     height:100%;
@@ -380,7 +379,7 @@ footer{
 }
 .footer{
     display: flex;
-    padding:50px;
+    padding:50px 0;
     justify-content: space-around;
     background-color:var(--grey);
     padding-right:350px;
@@ -451,6 +450,12 @@ footer{
     .card_card_left .card {
         width:100%;
     }
+    .card_right .card {
+        width:100%;
+    }
+    .popular_cards{
+        flex-direction:column;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -479,6 +484,7 @@ footer{
     }
     .footer{
         flex-direction:column;
+        padding:50px;
     }
     .popular_cards{
         flex-direction:column;
@@ -524,7 +530,7 @@ footer{
         margin:0;
     }
     #Activités{
-        margin:0 30px 0 30px;
+        margin:0 50px;
     }
     .btn_responsive{
         display:block;
