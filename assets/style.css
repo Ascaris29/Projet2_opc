@@ -223,8 +223,12 @@ nav li a:hover::after{
     box-shadow: 0px 0px 22px 0px rgba(181, 181, 181, 1);
     border-radius:20px;
     padding:3px;
-    display:flex;
-    flex-direction:column;
+    transition:all 0.3s ease-in-out;
+    cursor:pointer;
+}
+.card_card_left .card a{
+    text-decoration:none;
+    color:var(--black);
 }
 .card_card_left .card_photos{
     width:100%;
@@ -238,6 +242,11 @@ nav li a:hover::after{
     width:100%;
     object-fit: cover;
 }
+.card_left .card:hover{
+    transform:scale(1.01);
+      filter:grayscale(100%); 
+}
+
 .stars_card{
     color:var(--blue);
 }
@@ -289,12 +298,21 @@ nav li a:hover::after{
     background-color:var(--white);
     box-shadow: 0px 0px 22px 0px rgba(181, 181, 181, 1);
     border-radius:20px;
-
+    transition:all 0.3s ease-in-out;
 }
+.card_right .card:hover{
+    transform:scale(1.01);
+    filter:grayscale(100%);
+}
+.card_right .card a{
+    text-decoration:none;
+    color:var(--black);
+    display:flex;
+}
+
 .card_right .card .img_card{
     width:calc(100%/2);
     padding:5px;
-    height:100%;
 }
 .card_right .card .card_photos{
     height:100%;
@@ -303,7 +321,7 @@ nav li a:hover::after{
     border-radius:20px 0px 0px 20px;
 }
 .card_right .card .text_card{
-    padding:20px;
+    padding:5px;
     display: flex;
     flex-direction:column;
     justify-content:space-around;
@@ -338,18 +356,26 @@ nav li a:hover::after{
     height:500px; 
     display:flex;
     flex-direction: column;
-    gap:45px;   
+    gap:45px;
+      
+}
+#Activités .card_row:hover,#Activités .card_column:hover{
+    transform:scale(1.01);
+    filter:grayscale(100%);
 }
 .card_row, .card_column{
     width:100%;
     border-radius:20px;
     box-shadow: 0px 0px 6px -2px rgba(66, 68, 90, 1);
-    height:100%;  
-    display:flex;
-    flex-direction: column;   
+    height:100%; 
+    transition:all 0.3s ease-in-out;    
 }
 .card_column{
     height:45%;
+}
+#Activités .cards a{
+    text-decoration:none;
+    color:var(--black);
 }
 
 #Activités .cards  .card_row .img{
