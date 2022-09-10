@@ -209,7 +209,7 @@ nav li a:hover::after{
     padding-top:30px;
     justify-content: space-around;
 }
-.card_left{
+.cards_hebergement{
     background-color:var(--grey);
     border-radius:20px;
     padding:30px;
@@ -237,12 +237,12 @@ nav li a:hover::after{
 .card_card_left .img_card{
     height:65%; 
 }
-.card_left .card_photos{
+.cards_hebergement .card_photos{
     height:100%;
     width:100%;
     object-fit: cover;
 }
-.card_left .card:hover{
+.cards_hebergement .card:hover{
     transform:scale(1.01);
       filter:grayscale(100%); 
 }
@@ -253,10 +253,10 @@ nav li a:hover::after{
 .colored{
     color:grey;
 }
-.card_left .title h3{
+.cards_hebergement .title h3{
     font-size:22px;
 }
-.card_card_left .title_card{
+.cards_hebergement .title_card{
     font-weight:600;
 }
 .card_card_left .para_card{
@@ -265,33 +265,35 @@ nav li a:hover::after{
 .card_card_left .stars_card{
     font-size:12px;
 }
-.card_left .show_more{
+.cards_hebergement .show_more{
     padding-top:50px;
     font-weight:600;
 }
-.card_right{
+
+
+.popular_cards{
     background-color:var(--grey);
     border-radius:20px;
     padding:35px 15px;
 }
-.card_right .title{
+.popular_cards .title{
     display: flex;
     justify-content:space-between;
 }
-.card_right .title .h1{
+.popular_cards .title .h1{
     font-weight:600;
     font-size:23px;
 }
-.card_right i{
+.popular_cards i{
     font-size:20px;
 }
-.popular_cards{
+.popular_c{
     padding-top:30px;
     display:flex;
     flex-direction:column;
     gap:20px;
 }
-.card_right .card{
+.popular_cards .card{
     width:350px;
     display:flex;
     height:170px;
@@ -300,40 +302,40 @@ nav li a:hover::after{
     border-radius:20px;
     transition:all 0.3s ease-in-out;
 }
-.card_right .card:hover{
-    transform:scale(1.01);
+.popular_cards .card:hover{
+    transform:scale(1.0);
     filter:grayscale(100%);
 }
-.card_right .card a{
+.popular_cards .card a{
     text-decoration:none;
     color:var(--black);
     display:flex;
 }
 
-.card_right .card .img_card{
+.popular_cards .card .img_card{
     width:calc(100%/2);
     padding:5px;
 }
-.card_right .card .card_photos{
+.popular_cards .card .card_photos{
     height:100%;
     object-fit:cover;
     width:100%;
     border-radius:20px 0px 0px 20px;
 }
-.card_right .card .text_card{
+.popular_cards .card .text_card{
     padding:5px;
     display: flex;
     flex-direction:column;
     justify-content:space-around;
 }
-.card_right .card .title_card{
+.popular_cards .card .title_card{
     font-weight:600;
     font-size:15px;
 }
-.card_right .card .stars_card{
+.popular_cards .card .stars_card{
     font-size:12px;
 }
-.card_right .card .para_card{
+.popular_cards .card .para_card{
     font-size:14px;
 }
 
@@ -433,13 +435,13 @@ footer{
    .container_cards{
        flex-direction:column-reverse;
    }
-   .popular_cards{
+   .popular_c{
        display:flex;
        justify-content:space-between;
        flex-direction:row;
    }
    
-    .card_left{
+    .cards_hebergement{
        padding:30px 30px 0 30px;
     }
     .show_more{
@@ -448,10 +450,10 @@ footer{
 }
 
 @media screen and (max-width:992px){
-    .card_right .card .para_card{
+    .popular_cards .card .para_card{
         font-size:12px;
     }
-    .card_right .card .text_card {
+    .popular_cards .card .text_card {
         padding:3px;
     }
    
@@ -476,10 +478,10 @@ footer{
     .card_card_left .card {
         width:100%;
     }
-    .card_right .card {
+    .cpopular_cards .card {
         width:100%;
     }
-    .popular_cards{
+    .popular_c{
         flex-direction:column;
     }
 }
@@ -492,14 +494,14 @@ footer{
     .card_card_left .card{
         width:100%;
     }
-    .card_right .card {
+    .popular_cards .card {
         width:100%;
     }
-    .card_left{
+    .cards_hebergement{
         background-color:transparent;
         padding:30px 50px;
     }
-    .card_right{
+    .popular_cards{
         padding:35px 50px;
     }
     .container_filter{
@@ -512,7 +514,7 @@ footer{
         flex-direction:column;
         padding:50px;
     }
-    .popular_cards{
+    .popular_c{
         flex-direction:column;
     }
     nav li{
