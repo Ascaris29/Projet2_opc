@@ -60,9 +60,6 @@ nav li a:hover::after{
     font-family:'Raleway', sans-serif;
     font-size:22px;
 }
-.text_search{
-    padding-top:10px;
-}
 .text_search h2{
   font-weight:300;
   font-size:16px;
@@ -113,65 +110,6 @@ nav li a:hover::after{
     border:1px solid var(--grey);
     height:100%;
 }
-/*
-.champs_search{
-    padding-top:20px;
-}
-.champ{
-    display:flex;
-   height:50px;
-}
-.icon_champs_search{
-    width:60px;
-    background-color:var(--grey);
-    border-radius:15px 0px 0px 15px;
-    border:none;
-    position:relative;
-}
-.champ_city{
-    border: 1px solid var(--grey);
-    border-radius:0px;
-    height:100%;
-    width:200px;
-    text-align:center;
-    font-size:18px;
-    font-weight:600;
-    font-family:'raleway', sans-serif;
-    background-color:var(--white);
-}
-.city_champs_search{
-    height:100%;
-}
-.btn_champs_search{
-    height:100%;
-}
-.btn_champs_search{
-    height:100%;
-    background-color:var(--blue);
-    border:none;
-    color:var(--white);
-    font-family:'Raleway', sans-serif;
-    font-size:18px;
-    font-weight:600;
-    letter-spacing: 1px;
-    border-radius:0px 15px 15px 0px;
-    padding:10px;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-}
-
-.btn_responsive{
-    display:none;
-}
-.icon_champs_search i{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-
-*/
 .filtres{
     margin: 0 60px;
     padding-top:40px;
