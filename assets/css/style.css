@@ -67,6 +67,53 @@ nav li a:hover::after{
   font-weight:300;
   font-size:16px;
 }
+
+.champs_search{
+    padding-top:30px
+}
+
+.champ{
+    display:flex;
+    align-items:center;
+    height:50px;
+}
+.icon_champs_search{
+    background-color:var(--grey);
+    padding:0 20px;
+    height:100%;
+    position:relative;
+    border-radius:15px 0 0 15px;
+}
+.icon_champs_search i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.btn_champs_search{
+    display:flex;
+    height:100%;
+    background-color:var(--blue);
+    color:var(--white);
+    border-radius: 0 15px 15px 0;
+    align-items:center;
+    padding:0 5px;
+    font-weight:600;
+}
+.btn_responsive{
+    display:none;
+    position:relative;
+    padding:0 20px;  
+}
+.city_champs_search{
+    border:none;
+    height:100%;
+}
+.champ_city{
+    border:1px solid var(--grey);
+    height:100%;
+}
+/*
 .champs_search{
     padding-top:20px;
 }
@@ -123,6 +170,8 @@ nav li a:hover::after{
     left:50%;
     transform:translate(-50%,-50%);
 }
+
+*/
 .filtres{
     margin: 0 60px;
     padding-top:40px;
@@ -560,7 +609,17 @@ footer{
     .btn_responsive{
         display:block;
         padding:10px;
+        position:relative;
+        padding:0 20px;
+        border-radius: 0 15px 15px 0;
     }
+    .btn_responsive i {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+
     .btn_search{
         display:none;
     }
