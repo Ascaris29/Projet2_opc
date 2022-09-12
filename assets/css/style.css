@@ -17,11 +17,16 @@
 body{
     font-family:'Raleway', sans-serif;  
 }
+main, header{
+    max-width:1280px;
+    margin:auto;
+}
+
 
 nav{
     display:flex;
     justify-content:space-between;
-    margin:40px 20px 0 60px;
+    margin:40px 20px 0 20px;
     align-items:center;
 }
 nav ul{
@@ -53,8 +58,8 @@ nav li a:hover::after{
     pointer-events: none;
 }
 .search{
-    margin:0 60px;
     padding-top:30px;
+    margin:0 20px;
 }
 .title_search h1{
     font-family:'Raleway', sans-serif;
@@ -76,7 +81,7 @@ nav li a:hover::after{
 }
 .icon_champs_search{
     background-color:var(--grey);
-    padding:0 20px;
+    padding:0 25px;
     height:100%;
     position:relative;
     border-radius:15px 0 0 15px;
@@ -94,7 +99,7 @@ nav li a:hover::after{
     color:var(--white);
     border-radius: 0 15px 15px 0;
     align-items:center;
-    padding:0 5px;
+    padding:0 15px;
     font-weight:600;
 }
 .btn_responsive{
@@ -111,8 +116,8 @@ nav li a:hover::after{
     height:100%;
 }
 .filtres{
-    margin: 0 60px;
     padding-top:40px;
+    margin:0 20px;
 }
 .filtres .title{
     margin-right:30px;
@@ -141,7 +146,7 @@ nav li a:hover::after{
     border-radius:50px;
     width:48px;
     position:relative; 
-    left:-8px;  
+    left:-5px;  
 }
 .items_filter i{
     color:var(--blue);
@@ -151,7 +156,7 @@ nav li a:hover::after{
     transform:translate(-50%,-50%);
     background-color:var(--clearblue);
     border-radius:50px;
-    padding:15px;
+    padding:17px;
 }
 .texte_filter p{
     padding: 0 6px;
@@ -160,8 +165,9 @@ nav li a:hover::after{
     padding:10px;
     font-size:16px;
 } 
-.icons_filter:hover{
+.items_filter i:hover{
     background-color:var(--blue);
+    color:var(--white);
 }
 
 .infos{
@@ -180,7 +186,7 @@ nav li a:hover::after{
 }
 #Hébergement{
     padding-top:40px;
-    margin:0 30px 0 30px;
+    margin: 0 20px;
 }
 .container_cards{
     display: flex;
@@ -197,17 +203,17 @@ nav li a:hover::after{
 .cards_hebergement{
     background-color:var(--grey);
     border-radius:20px;
-    padding:30px;
+    padding:30px 30px 0 30px;
 }
 .card_card_left .card .text_card{
-    padding:5px 10px;
+    padding:10px 10px;
 }
 .card_card_left .card{
     width:30%;
     height:200px;
     box-shadow: 0px 0px 22px 0px rgba(181, 181, 181, 1);
     border-radius:20px;
-    padding:3px;
+    padding:5px;
     transition:all 0.3s ease-in-out;
     cursor:pointer;
 }
@@ -229,7 +235,6 @@ nav li a:hover::after{
 }
 .cards_hebergement .card:hover{
     transform:scale(1.01);
-      filter:grayscale(100%); 
 }
 
 .stars_card{
@@ -246,13 +251,16 @@ nav li a:hover::after{
 }
 .card_card_left .para_card{
     font-size:15px;
+    padding-top:4px;
 }
 .card_card_left .stars_card{
     font-size:12px;
+    padding-top:4px;
 }
 .cards_hebergement .show_more{
     padding-top:50px;
     font-weight:600;
+    font-size:19px;
 }
 
 
@@ -289,7 +297,6 @@ nav li a:hover::after{
 }
 .popular_cards .card:hover{
     transform:scale(1.0);
-    filter:grayscale(100%);
 }
 .popular_cards .card a{
     text-decoration:none;
@@ -348,12 +355,11 @@ nav li a:hover::after{
 }
 #Activités .card_row:hover,#Activités .card_column:hover{
     transform:scale(1.01);
-    filter:grayscale(100%);
 }
 .card_row, .card_column{
     width:100%;
     border-radius:20px;
-    box-shadow: 0px 0px 6px -2px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 10px -1px rgba(66, 68, 90, 1);
     height:100%; 
     transition:all 0.3s ease-in-out;    
 }
@@ -458,7 +464,7 @@ footer{
         height:80%;
     }
 }
-@media screen and (max-width:870px){
+@media screen and (max-width:872px){
     .card_card_left .card {
         width:100%;
     }
@@ -467,6 +473,9 @@ footer{
     }
     .popular_c{
         flex-direction:column;
+    }
+    .popular_cards .card {
+        width:100%;
     }
 }
 
