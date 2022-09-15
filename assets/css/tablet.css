@@ -1,37 +1,12 @@
+
+
 /*------------------------------------Tablet responsive--------------------------------*/
-
-
-
 @media screen and (max-width:768px){
+
+    /* --------------------------Header-------------------*/
     nav{
         flex-direction:column;
         margin:40px 0 0 0;
-    }
-    .card_card_left .card{
-        width:100%;
-    }
-    .popular_cards .card {
-        width:100%;
-    }
-    .cards_hebergement{
-        background-color:transparent;
-        padding:30px 50px;
-    }
-    .popular_cards{
-        padding:35px 50px;
-    }
-    .container_filter{
-        display:block;
-    }
-    .filter_items{
-        padding-top:20px;
-    }
-    .footer{
-        flex-direction:column;
-        padding:50px;
-    }
-    .popular_c{
-        flex-direction:column;
     }
     nav li{
         margin-left:0;
@@ -65,16 +40,8 @@
     .items_nav a::after:hover{
         background-color:var(--blue);
     }
-   
     .champ{
         position:relative;
-    }
-   
-    #Hébergement{
-        margin:0;
-    }
-    #Activités{
-        margin:0 50px;
     }
     .btn_responsive{
         display:block;
@@ -82,6 +49,8 @@
         position:relative;
         padding:0 20px;
         border-radius: 0 15px 15px 0;
+        border:none;
+        color:var(--white);
     }
     .btn_responsive i {
         position:absolute;
@@ -89,8 +58,43 @@
         left:50%;
         transform:translate(-50%,-50%);
     }
-
     .btn_search{
         display:none;
     }
+    /*---------------------End Of Header-----------------*/
+
+    /*------------------------Filter section--------------------*/
+    .container_filter{
+        display:block;
+    }
+    .filter_items{
+        padding-top:20px;
+    }
+    /*---------------------------End of filter section------------------*/
+    
+    /*----------------------Hebergement section----------------*/
+    #hebergement{
+        margin:0;
+    }
+    .card_card_left .card{
+        width:100%;
+    }
+    .cards_hebergement{
+        background-color:transparent;
+        padding:30px 50px;
+    }
+    /*------------------------End of hebergement section--------------*/
+
+    /*-------------------------Activity section-----------------------*/
+    #activites{
+        margin:0 50px;
+    }
+    /*------------------------End of activity section------------------*/
+
+    /*------------------------Footer--------------------------*/
+    .footer{
+        flex-direction:column;
+        padding:50px;
+    }
+    /*-------------------End of footer--------------------*/
 }
