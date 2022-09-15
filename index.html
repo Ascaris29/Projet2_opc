@@ -2,12 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!-- version mobile-->
+    <link rel="stylesheet" type="text/css" href="assets/css/tablet.css"> <!-- version tablette-->
     <script src="https://kit.fontawesome.com/e65359aae8.js" crossorigin="anonymous"></script>
     <title>Booki</title>
+    <meta> 
 </head>
 <body>
     <header>
@@ -29,7 +30,7 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             </div>
             <div class="text_search">
-                <h2>En plein centre ville ou en pleine nature</h2>
+                <h2>En plein centre ville ou en pleine nature</h2>  <!--p-->
             </div>
             <div class="champs_search">
                 <form method="post" class="champ">
@@ -39,7 +40,7 @@
                     <div class="city_champs_search">
                         <input type="text" name="city" class="champ_city">
                     </div>
-                    <div class="btn_champs_search">
+                    <div class="btn_champs_search">             <!--btn-->
                         <div class="btn_search">
                             <p>Rechercher</p>
                         </div>
@@ -55,7 +56,7 @@
             <section class="filtres">
                 <div class="container_filter">
                     <div class="title">
-                        <h4>Filtres</h4>
+                        <h4>Filtres</h4>                    <!--H2-->
                     </div>
                     <div class="filter_items">
                         <div class="items_filter">
@@ -101,13 +102,13 @@
                     </div>
                 </div>
             </section>
-            <section id="Hébergement">
+            <section id="Hébergement"> <!--pas de maj-->
                 <div class="cards">
                     <div class="container_cards">
                         <section class="cards_hebergement">
                             <div class="title"><h3>Hébergements à Marseille</h3></div>
                                 <div class="card_card_left">
-                                    <div class="card">
+                                    <div class="card"> <!--article-->
                                         <a href="#">
                                             <div class="img_card">
                                                 <img src="assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image d'une chambre de l'hôtel la Cannebière" class="card_photos">
@@ -181,11 +182,11 @@
                                         </a>
                                     </div>  
                                 </div>
-                                <div class="show_more">Afficher plus </div>
+                                <div class="show_more">Afficher plus </div>  <!--lien-->
                         </section>
                         <section class="popular_cards">
                             <div class="title">
-                                <h3>Les plus populaires </h3>
+                                <h3>Les plus populaires </h3>    <!--todo : h2-->
                                 <div class="stars_title">
                                     <i class="fa-solid fa-star"></i>
                                 </div>
@@ -197,9 +198,11 @@
                                                 <img src="assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image d'une chambre de l'hôtel le soleil du matin" class="card_photos">
                                             </div>
                                             <div class="text_card">
-                                                <div class="title_card">Hôtel Le soleil du matin</div>
-                                                <div class="para_card">Nuit à partir de 128 €</div>
-                                                <div class="stars_card">★★★★★</div>
+                                                <div>
+                                                    <div class="title_card">Hôtel Le soleil du matin</div>              <!-- h3 -->
+                                                    <div class="para_card">Nuit à partir de 128 €</div>                 <!--p-->
+                                                </div>
+                                                <div class="stars_card">★★★★★</div>                <!--changer etoiles-->
                                             </div> 
                                         </a> 
                                     </div>
@@ -239,14 +242,14 @@
                         <h3>Activités à Marseille</h3>
                     </div>
                         <div class="cards_activity">
-                            <div class="cards">
-                                <div class="card_row">
+                            <div class="cards">                         
+                                <div class="card_row">          <!--articles-->
                                     <a href="#">
                                         <div class="img">
                                             <img src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image de l'activité vieux port" class="photo_activity">
                                         </div>
                                         <div class="title">
-                                            <h4>Vieux port</h4>
+                                            <h4>Vieux port</h4>             <!--h"-->
                                         </div>
                                     </a>
                                 </div>
@@ -319,11 +322,11 @@
                     </div>
                     <div class="items_footer">
                         <div class="items"><a href="#">Fonctionnement du site</a></div>
-                        <div class="items"><a href="#">Conditions générales de vente</a></div>
+                        <div class="items"><a href="#">Conditions générales de vente</a></div>          <!--li-->
                         <div class="items"><a href="#">Données et confidentialité</a></div>
                     </div>
                 </div>
-                <div class="hebergements_footer">
+                <div class="hebergements">
                     <div class="title">
                         <h3>Nos hébergements</h3>
                     </div>

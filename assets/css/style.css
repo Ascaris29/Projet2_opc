@@ -1,5 +1,13 @@
 
+
+
+
+
+/*--------------------------------- Fonts ----------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+/*------------------------------------ Root ------------------------*/
 
 :root{
     --blue: #0065FC;
@@ -9,6 +17,8 @@
     --white:#FEFEFE;
     --dark-grey:#D1D0D0;
 }
+
+/*--------------------------General-------------------------------------*/
 *{
     margin:0;
     padding:0;
@@ -22,6 +32,7 @@ main, header{
     margin:auto;
 }
 
+/*  ---------------------------- header ----------------------------*/ 
 
 nav{
     display:flex;
@@ -115,6 +126,11 @@ nav li a:hover::after{
     border:1px solid var(--grey);
     height:100%;
 }
+
+/*--------------------End of header------------------*/
+
+
+/*--------------------- Filter section-------------------*/
 .filtres{
     padding-top:40px;
     margin:0 20px;
@@ -184,6 +200,13 @@ nav li a:hover::after{
 .icon_infos i{
     color:var(--blue);
 }
+
+/*-----------------------End of filter section--------------------------*/
+
+
+
+
+/*---------------------hebergement section----------------------------*/
 #Hébergement{
     padding-top:40px;
     margin: 0 20px;
@@ -247,7 +270,7 @@ nav li a:hover::after{
     font-size:22px;
 }
 .cards_hebergement .title_card{
-    font-weight:600;
+    font-weight:600;        /*dupplication */
 }
 .card_card_left .para_card{
     font-size:15px;
@@ -262,6 +285,8 @@ nav li a:hover::after{
     font-weight:600;
     font-size:19px;
 }
+
+/*-------------------------popular cards section-------------------------*/
 
 
 .popular_cards{
@@ -331,9 +356,14 @@ nav li a:hover::after{
     font-size:14px;
 }
 
+/*----------------------------------End of popular card---------------------------------------*/
 
 
 
+
+
+
+/*-----------------------------------Activites section-------------------------------------------*/
 #Activités{
     padding-top:100px;
     margin:0 30px 0 30px;
@@ -392,6 +422,15 @@ nav li a:hover::after{
 #Activités .card_row .title{
     padding:10px 10px;
 }
+
+
+
+/*----------------------------------------End of activite section-------------------------------------*/
+
+
+
+
+/*---------------------------------------Footer-------------------------------------------------------*/
 footer{
     margin-top:100px;
     background-color:var(--grey);
@@ -423,7 +462,11 @@ footer{
 }
 
 
+/*--------------------------------------End of footer-------------------------------------------------*/
 
+
+
+/*--------------------------------------Responsive design desktop-------------------------------------*/
 @media screen and (max-width:1330px){
    .container_cards{
        flex-direction:column-reverse;
@@ -483,97 +526,6 @@ footer{
     }
 }
 
-@media screen and (max-width:768px){
-    nav{
-        flex-direction:column;
-        margin:40px 0 0 0;
-    }
-    .card_card_left .card{
-        width:100%;
-    }
-    .popular_cards .card {
-        width:100%;
-    }
-    .cards_hebergement{
-        background-color:transparent;
-        padding:30px 50px;
-    }
-    .popular_cards{
-        padding:35px 50px;
-    }
-    .container_filter{
-        display:block;
-    }
-    .filter_items{
-        padding-top:20px;
-    }
-    .footer{
-        flex-direction:column;
-        padding:50px;
-    }
-    .popular_c{
-        flex-direction:column;
-    }
-    nav li{
-        margin-left:0;
-    }
-    .items_nav li{
-        position:relative;
-        padding-bottom:10px;
-    }
-    .items_nav a::after{
-        content:"";
-        background-color:var(--grey);
-        width:100%;
-        height:3px;
-        position:absolute;
-        bottom:0;
-        left:0;
-    }
-    nav li a:hover::after{
-        content:"";
-        background-color:var(--blue);
-        width:100%;
-        height:3px;
-        position:absolute;
-        bottom:0;
-        left:0;
-        pointer-events: none;
-    }
-    .items_nav{
-        padding-top:30px;
-    }
-    .items_nav a::after:hover{
-        background-color:var(--blue);
-    }
-   
-    .champ{
-        position:relative;
-    }
-   
-    #Hébergement{
-        margin:0;
-    }
-    #Activités{
-        margin:0 50px;
-    }
-    .btn_responsive{
-        display:block;
-        padding:10px;
-        position:relative;
-        padding:0 20px;
-        border-radius: 0 15px 15px 0;
-    }
-    .btn_responsive i {
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-    }
-
-    .btn_search{
-        display:none;
-    }
-}
+/*----------------------------------End of desktop-----------------------------------*/
 
 

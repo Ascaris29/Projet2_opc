@@ -1,0 +1,96 @@
+/*------------------------------------Tablet responsive--------------------------------*/
+
+
+
+@media screen and (max-width:768px){
+    nav{
+        flex-direction:column;
+        margin:40px 0 0 0;
+    }
+    .card_card_left .card{
+        width:100%;
+    }
+    .popular_cards .card {
+        width:100%;
+    }
+    .cards_hebergement{
+        background-color:transparent;
+        padding:30px 50px;
+    }
+    .popular_cards{
+        padding:35px 50px;
+    }
+    .container_filter{
+        display:block;
+    }
+    .filter_items{
+        padding-top:20px;
+    }
+    .footer{
+        flex-direction:column;
+        padding:50px;
+    }
+    .popular_c{
+        flex-direction:column;
+    }
+    nav li{
+        margin-left:0;
+    }
+    .items_nav li{
+        position:relative;
+        padding-bottom:10px;
+    }
+    .items_nav a::after{
+        content:"";
+        background-color:var(--grey);
+        width:100%;
+        height:3px;
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
+    nav li a:hover::after{
+        content:"";
+        background-color:var(--blue);
+        width:100%;
+        height:3px;
+        position:absolute;
+        bottom:0;
+        left:0;
+        pointer-events: none;
+    }
+    .items_nav{
+        padding-top:30px;
+    }
+    .items_nav a::after:hover{
+        background-color:var(--blue);
+    }
+   
+    .champ{
+        position:relative;
+    }
+   
+    #Hébergement{
+        margin:0;
+    }
+    #Activités{
+        margin:0 50px;
+    }
+    .btn_responsive{
+        display:block;
+        padding:10px;
+        position:relative;
+        padding:0 20px;
+        border-radius: 0 15px 15px 0;
+    }
+    .btn_responsive i {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+
+    .btn_search{
+        display:none;
+    }
+}
