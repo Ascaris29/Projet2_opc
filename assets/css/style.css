@@ -16,6 +16,8 @@
     --black:#1E1E1E;
     --white:#FEFEFE;
     --dark-grey:#D1D0D0;
+    --border_radius:50px;
+    --box_shadow:0px 0px 10px -1px rgba(66, 68, 90, 1);
 }
 /*--------------------------General-------------------------------------*/
 *{
@@ -38,6 +40,12 @@ h2{
 }
 h3{
     font-size:16px;
+}
+.section{
+    margin:0 20px;
+}
+.card_radius{
+    border-radius:20px;
 }
 /*  ---------------------------- header ----------------------------*/ 
 nav{
@@ -76,7 +84,6 @@ nav li a:hover::after{
 /*---------------------------header search--------------------*/
 .search{
     padding-top:30px;
-    margin:0 20px;
 }
 .title_search h1{
     font-family:'Raleway', sans-serif;
@@ -141,7 +148,6 @@ nav li a:hover::after{
 /*--------------------- Filter section-------------------*/
 .filtres{
     padding-top:40px;
-    margin:0 20px;
 }
 .filtres .title{
     margin-right:30px;
@@ -162,7 +168,7 @@ nav li a:hover::after{
 .items_filter{
     display: flex;
     border:2px solid var(--dark-grey);
-    border-radius:50px;
+    border-radius:var(--border_radius);
     margin-right:30px;
     position:relative;
     height:50px;
@@ -182,7 +188,7 @@ nav li a:hover::after{
     left:50%;
     transform:translate(-50%,-50%);
     background-color:var(--clearblue);
-    border-radius:50px;
+    border-radius:var(--border_radius);
     padding:17px;
 }
 .texte_filter p{
@@ -205,7 +211,7 @@ nav li a:hover::after{
 .icon_infos{
     border:1px solid var(--grey);
     padding:5px 12px;
-    border-radius:50px;
+    border-radius:var(--border_radius);
     margin-right:20px;
 }
 .icon_infos i{
@@ -216,7 +222,6 @@ nav li a:hover::after{
 /*---------------------hebergement section----------------------------*/
 #hebergement{
     padding-top:40px;
-    margin: 0 20px;
 }
 .container_cards{
     display: flex;
@@ -231,7 +236,6 @@ nav li a:hover::after{
 }
 .cards_hebergement{
     background-color:var(--grey);
-    border-radius:20px;
     padding:50px 30px;
     display:flex;
     flex-direction:column;
@@ -243,8 +247,7 @@ nav li a:hover::after{
 .card_card_left .card{
     width:30%;
     height:200px;
-    box-shadow: 0px 0px 22px 0px rgba(181, 181, 181, 1);
-    border-radius:20px;
+    box-shadow: var(--box_shadow);
     padding:5px;
     cursor:pointer;
 }
@@ -296,7 +299,6 @@ nav li a:hover::after{
 /*-------------------------popular cards section-------------------------*/
 .popular_cards{
     background-color:var(--grey);
-    border-radius:20px;
     padding:35px 15px;
 }
 .popular_cards .title{
@@ -321,8 +323,7 @@ nav li a:hover::after{
     display:flex;
     height:170px;
     background-color:var(--white);
-    box-shadow: 0px 0px 22px 0px rgba(181, 181, 181, 1);
-    border-radius:20px;
+    box-shadow: var(--box_shadow);
 }
 .popular_cards .card a{
     text-decoration:none;
@@ -361,7 +362,6 @@ nav li a:hover::after{
 /*-----------------------------------Activites section-------------------------------------------*/
 #activites{
     padding-top:100px;
-    margin:0 30px 0 30px;
 }
 #activites .cards_activity{
     display:flex;
@@ -371,7 +371,6 @@ nav li a:hover::after{
 }
 #activites .cards_activity .cards{
     width:25%;
-    border-radius:20px;
     height:500px; 
     display:flex;
     flex-direction: column;
@@ -380,8 +379,7 @@ nav li a:hover::after{
 }
 .card_row, .card_column{
     width:100%;
-    border-radius:20px;
-    box-shadow: 0px 0px 10px -1px rgba(66, 68, 90, 1);
+    box-shadow: var(--box_shadow);
     height:100%;    
 }
 .card_column{
