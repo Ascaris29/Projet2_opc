@@ -54,6 +54,7 @@ nav{
     margin:40px 0;
     align-items:center;
 }
+
 nav ul{
     display:flex;
 }
@@ -341,6 +342,7 @@ nav li a:hover::after{
     border-radius:20px 0px 0px 20px;
 }
 .popular_cards .card .text_card{
+    width:60%;
     padding:20px;
     display: flex;
     flex-direction:column;
@@ -447,11 +449,11 @@ footer{
 
 /*--------------------------------------Responsive design desktop-------------------------------------*/
 @media screen and (max-width:1330px){
-    /*--------header--------*/
-   .container_cards{
-       flex-direction:column-reverse;
-   }
+   
    /*---------hebergement section--------*/
+   .container_cards{
+    flex-direction:column-reverse;
+    }
    .popular_c{
        display:flex;
        justify-content:space-between;
@@ -503,7 +505,7 @@ footer{
         width:100%;
     }
     .popular_cards{
-        padding:35px 50px;
+        padding:35px 30px;
     }
 }
 /*----------------------------------End of desktop-----------------------------------*/

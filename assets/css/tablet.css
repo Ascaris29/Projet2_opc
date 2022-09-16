@@ -8,38 +8,48 @@
         flex-direction:column;
         margin:40px 0 0 0;
     }
+    nav ul{
+        width:100%;
+        justify-content:space-around;
+    }
     nav li{
         margin-left:0;
     }
     .items_nav li{
         position:relative;
         padding-bottom:10px;
-    }
-    .items_nav a::after{
-        content:"";
-        background-color:var(--grey);
-        width:100%;
-        height:3px;
-        position:absolute;
-        bottom:0;
-        left:0;
+        width:50%;
+        text-align:center;
     }
     nav li a:hover::after{
         content:"";
         background-color:var(--blue);
         width:100%;
-        height:3px;
+        height:5px;
         position:absolute;
-        bottom:0;
-        left:0;
+        bottom:-43%;
+        z-index:99;
         pointer-events: none;
     }
     .items_nav{
         padding-top:30px;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        position:relative;
     }
-    .items_nav a::after:hover{
-        background-color:var(--blue);
+    .items_nav::after{
+        content:"";
+        background-color:var(--grey);
+        height:5px;
+        width:100%;
+        position:absolute;
+        bottom:-20%;
+        pointer-events:none;
     }
+    
+
+
     .champ{
         position:relative;
     }
@@ -81,13 +91,13 @@
     }
     .cards_hebergement{
         background-color:transparent;
-        padding:30px 50px;
+        padding:30px 30px;
     }
     /*------------------------End of hebergement section--------------*/
 
     /*-------------------------Activity section-----------------------*/
     #activites{
-        margin:0 50px;
+        margin:0 30px;
     }
     /*------------------------End of activity section------------------*/
 
