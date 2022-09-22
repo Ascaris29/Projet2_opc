@@ -71,6 +71,12 @@
     .btn_search{
         display:none;
     }
+    .btn_champs_search{
+        border-radius: 15px;
+        position:relative;
+        right:10px;
+        padding:8px;
+    }
     /*---------------------End Of Header-----------------*/
 
     /*------------------------Filter section--------------------*/
@@ -96,9 +102,7 @@
     /*------------------------End of hebergement section--------------*/
 
     /*-------------------------Activity section-----------------------*/
-    #activites{
-        margin:0 30px;
-    }
+    
     /*------------------------End of activity section------------------*/
 
     /*------------------------Footer--------------------------*/
